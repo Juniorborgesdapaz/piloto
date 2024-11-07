@@ -1,4 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("a view etsa funcionado")
+def sobre(request):
+    return render(request, 'sobre.html')
+
