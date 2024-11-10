@@ -1,0 +1,30 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Meu Projeto Django{% endblock %}</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="contato.html">contato</a></li>
+                <li><a href="{% url 'about' %}">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <p>site feito por jr</p>
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Projeto Django</p>
+    </footer>
+</body>
+</html>
