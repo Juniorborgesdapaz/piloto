@@ -2,8 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    
-    path('', views.index, name='home'),
-    
-      # Associa a URL raiz do app com a view `index`
+    path('index/', views.index, name='index'),  # Para acessar a view de texto simples
+    path('', views.home, name='home'),  # A view que renderiza index.html
 ]
