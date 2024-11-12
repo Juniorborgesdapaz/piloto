@@ -1,8 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def index(request):
-    return HttpResponse("A view está funcionando")
+def sobre(request):
+    return render(request,'sobre.html')
 
-def home(request):
-    return render(request, 'index.html')
+def contato(request):
+    return render(request, 'contato.html')
